@@ -1,0 +1,35 @@
+PATIENT DEMOGRAPHICS
+Field,Value
+"name","Patient 012"
+"mrn","202600012"
+"dob","01/01/1949"
+"age","77"
+"sex","Male"
+"gender","Male"
+"race","Other"
+"ethnicity","Non-Hispanic"
+"language","English"
+"maritalStatus","Married"
+"address","123 Clinical Way, Research City"
+"insurance","Study Sponsor"
+
+VITAL SIGNS
+Measurement,Value,Date
+"weight","209.4 lbs (95 kg)","01/03/2026"
+"bmi","31.0 (Obese)","01/03/2026"
+
+MEDICATIONS
+Medication,Dose,Route,Frequency,Indication,Prescriber
+
+ALLERGIES
+Allergen,Reaction,Severity,Verified
+"None","N/A","N/A","2026"
+
+PROBLEM LIST
+Condition,ICD-10 Code,Onset,Status
+"Bradycardia","R00.1","2012","Active"
+"Cardiac Pacemaker","Z95.0","2012","Present"
+
+LABORATORY RESULTS
+Test,Value,Reference Range,Date,Flag
+"MMSE","26","24-30","01/03/2026","Normal"

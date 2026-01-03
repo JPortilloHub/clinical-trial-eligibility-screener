@@ -1,0 +1,45 @@
+PATIENT DEMOGRAPHICS
+Field,Value
+"name","Patient 004"
+"mrn","202600004"
+"dob","01/01/1964"
+"age","62"
+"sex","Female"
+"gender","Female"
+"race","Other"
+"ethnicity","Non-Hispanic"
+"language","English"
+"maritalStatus","Married"
+"address","123 Clinical Way, Research City"
+"insurance","Study Sponsor"
+
+
+VITAL SIGNS
+Measurement,Value,Date
+"bp","115/70 mmHg","01/03/2026"
+"hr","72 bpm","01/03/2026"
+"temp","98.6 F","01/03/2026"
+"weight","130.1 lbs (59 kg)","01/03/2026"
+"height","5'4" (162 cm)","01/03/2026"
+"bmi","22.5 (Normal)","01/03/2026"
+
+
+MEDICATIONS
+Medication,Dose,Route,Frequency,Indication,Prescriber
+
+
+ALLERGIES
+Allergen,Reaction,Severity,Verified
+"None","N/A","N/A","2026"
+
+
+PROBLEM LIST
+Condition,ICD-10 Code,Onset,Status
+"Mild Cognitive Impairment","G31.84","2025","Active"
+
+
+LABORATORY RESULTS
+Test,Value,Reference Range,Date,Flag
+"MMSE","28","24-30","01/03/2026","Normal"
+"CDR Global","0.5","0","01/03/2026","High"
+"Amyloid CSF","Positive","Negative","01/03/2026","Positive"

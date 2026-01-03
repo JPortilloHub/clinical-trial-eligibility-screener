@@ -1,0 +1,46 @@
+PATIENT DEMOGRAPHICS
+Field,Value
+"name","Patient 006"
+"mrn","202600006"
+"dob","01/01/1951"
+"age","75"
+"sex","Male"
+"gender","Male"
+"race","Other"
+"ethnicity","Non-Hispanic"
+"language","English"
+"maritalStatus","Married"
+"address","123 Clinical Way, Research City"
+"insurance","Study Sponsor"
+
+
+VITAL SIGNS
+Measurement,Value,Date
+"bp","135/82 mmHg","01/03/2026"
+"hr","74 bpm","01/03/2026"
+"temp","98.6 F","01/03/2026"
+"weight","200.6 lbs (91 kg)","01/03/2026"
+"height","5'9" (175 cm)","01/03/2026"
+"bmi","29.7 (Overweight)","01/03/2026"
+
+
+MEDICATIONS
+Medication,Dose,Route,Frequency,Indication,Prescriber
+"Atorvastatin","20mg","Oral","Once daily","Lipids","Dr. Neurologist"
+
+
+ALLERGIES
+Allergen,Reaction,Severity,Verified
+"None","N/A","N/A","2026"
+
+
+PROBLEM LIST
+Condition,ICD-10 Code,Onset,Status
+"Hyperlipidemia","E78.5","2018","Active"
+
+
+LABORATORY RESULTS
+Test,Value,Reference Range,Date,Flag
+"MMSE","25","24-30","01/03/2026","Normal"
+"CDR Global","0.5","0","01/03/2026","High"
+"Amyloid PET","Positive","Negative","01/03/2026","Positive"

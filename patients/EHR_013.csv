@@ -1,0 +1,35 @@
+PATIENT DEMOGRAPHICS
+Field,Value
+"name","Patient 013"
+"mrn","202600013"
+"dob","01/01/1957"
+"age","69"
+"sex","Female"
+"gender","Female"
+"race","Other"
+"ethnicity","Non-Hispanic"
+"language","English"
+"maritalStatus","Married"
+"address","123 Clinical Way, Research City"
+"insurance","Study Sponsor"
+
+VITAL SIGNS
+Measurement,Value,Date
+"weight","119.0 lbs (54 kg)","01/03/2026"
+"bmi","20.6 (Normal)","01/03/2026"
+
+MEDICATIONS
+Medication,Dose,Route,Frequency,Indication,Prescriber
+
+ALLERGIES
+Allergen,Reaction,Severity,Verified
+"None","N/A","N/A","2026"
+
+PROBLEM LIST
+Condition,ICD-10 Code,Onset,Status
+"Major Depression","F32.9","2025","Active"
+
+LABORATORY RESULTS
+Test,Value,Reference Range,Date,Flag
+"MMSE","23","24-30","01/03/2026","Low"
+"GDS Score","11","<8","01/03/2026","High"
