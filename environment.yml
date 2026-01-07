@@ -90,4 +90,6 @@ dependencies:
       - tqdm==4.66.3
       - anthropic
       - pypdf
+      - langchain_voyageai
+      - langchain_chroma
 prefix: /opt/conda

@@ -1,7 +1,8 @@
 #!git clone https://github.com/JPortilloHub/clinical-trial-eligibility-screener.git
 import anthropic
-
 from pypdf import PdfReader
+from langchain_voyageai import VoyageAIEmbeddings
+from langchain_chroma import Chroma
 import os
 
 client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
@@ -23,7 +24,6 @@ Return only the text of that section
 </document>
 """
 
-
 response = client.messages.create(
     model = "claude-haiku-4-5-20251001",
     max_tokens = 2000,
@@ -31,4 +31,15 @@ response = client.messages.create(
 )
 
 eligibility_criteria_extraction = response.content[0].text
+
+
+#3 Embed the eligibility criteria into the vector database
+eligibility_criteria_embedded = VoyageAIEmbeddings(model= "voyage-3", voya_api_key= os.environ.get("VOYAGE_API_KEY"))
+
+eligibility_criteria_vector_db = Chroma.from_texts(
+    texts=[eligibility_criteria_extraction],
+    embedding=eligibility_criteria_embedded,
+    collection_name="eligibility_criteria",
+    metadatas=[{"source": "clinical-trial-protocol.pdf", "section": "Patient Selection Criteria"}]
+)
 
