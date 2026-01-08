@@ -34,7 +34,7 @@ eligibility_criteria_extraction = response.content[0].text
 
 
 #3 Embed the eligibility criteria into the vector database
-eligibility_criteria_embedded = VoyageAIEmbeddings(model= "voyage-3", voya_api_key= os.environ.get("VOYAGE_API_KEY"))
+eligibility_criteria_embedded = VoyageAIEmbeddings(model="voyage-3", voyage_api_key=os.environ.get("VOYAGE_API_KEY"))
 
 eligibility_criteria_vector_db = Chroma.from_texts(
     texts=[eligibility_criteria_extraction],
