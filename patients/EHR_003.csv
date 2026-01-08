@@ -1,0 +1,41 @@
+PATIENT DEMOGRAPHICS
+Field,Value
+"name","Patient 003"
+"mrn","202600003"
+"dob","01/01/1947"
+"age","79"
+"sex","Male"
+"gender","Male"
+"race","Other"
+"ethnicity","Non-Hispanic"
+"language","English"
+"maritalStatus","Married"
+"address","123 Clinical Way, Research City"
+"insurance","Study Sponsor"
+
+VITAL SIGNS
+Measurement,Value,Date
+"bp","130/80 mmHg","01/03/2026"
+"hr","72 bpm","01/03/2026"
+"temp","98.6 F","01/03/2026"
+"weight","194.0 lbs (88 kg)","01/03/2026"
+"height","5'9" (175 cm)","01/03/2026"
+"bmi","28.7 (Overweight)","01/03/2026"
+
+MEDICATIONS
+Medication,Dose,Route,Frequency,Indication,Prescriber
+"Memantine","10mg","Oral","Twice daily","AD","Dr. Neurologist"
+
+ALLERGIES
+Allergen,Reaction,Severity,Verified
+"None","N/A","N/A","2026"
+
+PROBLEM LIST
+Condition,ICD-10 Code,Onset,Status
+"Alzheimer's Disease","G30.1","2023","Active"
+
+LABORATORY RESULTS
+Test,Value,Reference Range,Date,Flag
+"MMSE","23","24-30","01/03/2026","Low"
+"CDR Global","1.0","0","01/03/2026","High"
+"Amyloid PET","Positive","Negative","01/03/2026","Positive"

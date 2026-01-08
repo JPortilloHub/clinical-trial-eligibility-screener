@@ -1,0 +1,41 @@
+PATIENT DEMOGRAPHICS
+Field,Value
+"name","Patient 002"
+"mrn","202600002"
+"dob","01/01/1954"
+"age","72"
+"sex","Female"
+"gender","Female"
+"race","Other"
+"ethnicity","Non-Hispanic"
+"language","English"
+"maritalStatus","Married"
+"address","123 Clinical Way, Research City"
+"insurance","Study Sponsor"
+
+VITAL SIGNS
+Measurement,Value,Date
+"bp","128/78 mmHg","01/03/2026"
+"hr","68 bpm","01/03/2026"
+"temp","98.6 F","01/03/2026"
+"weight","141.1 lbs (64 kg)","01/03/2026"
+"height","5'4" (162 cm)","01/03/2026"
+"bmi","24.4 (Normal)","01/03/2026"
+
+MEDICATIONS
+Medication,Dose,Route,Frequency,Indication,Prescriber
+"Lisinopril","10mg","Oral","Once daily","HTN","Dr. Neurologist"
+
+ALLERGIES
+Allergen,Reaction,Severity,Verified
+"Sulfa drugs","Rash","Moderate","2015"
+
+PROBLEM LIST
+Condition,ICD-10 Code,Onset,Status
+"Hypertension","I10","2015","Active"
+
+LABORATORY RESULTS
+Test,Value,Reference Range,Date,Flag
+"MMSE","26","24-30","01/03/2026","Normal"
+"CDR Global","0.5","0","01/03/2026","High"
+"Amyloid CSF","Positive","Negative","01/03/2026","Positive"

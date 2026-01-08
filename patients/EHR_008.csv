@@ -1,0 +1,45 @@
+PATIENT DEMOGRAPHICS
+Field,Value
+"name","Patient 008"
+"mrn","202600008"
+"dob","01/01/1956"
+"age","70"
+"sex","Male"
+"gender","Male"
+"race","Other"
+"ethnicity","Non-Hispanic"
+"language","English"
+"maritalStatus","Married"
+"address","123 Clinical Way, Research City"
+"insurance","Study Sponsor"
+
+
+VITAL SIGNS
+Measurement,Value,Date
+"bp","125/75 mmHg","01/03/2026"
+"hr","65 bpm","01/03/2026"
+"temp","98.6 F","01/03/2026"
+"weight","169.8 lbs (77 kg)","01/03/2026"
+"height","5'9" (175 cm)","01/03/2026"
+"bmi","25.1 (Overweight)","01/03/2026"
+
+
+MEDICATIONS
+Medication,Dose,Route,Frequency,Indication,Prescriber
+
+
+ALLERGIES
+Allergen,Reaction,Severity,Verified
+"Shellfish","Hives","Moderate","2008"
+
+
+PROBLEM LIST
+Condition,ICD-10 Code,Onset,Status
+"Alzheimer's Disease","G30.1","2024","Active"
+
+
+LABORATORY RESULTS
+Test,Value,Reference Range,Date,Flag
+"MMSE","24","24-30","01/03/2026","Normal"
+"CDR Global","1.0","0","01/03/2026","High"
+"Amyloid PET","Positive","Negative","01/03/2026","Positive"

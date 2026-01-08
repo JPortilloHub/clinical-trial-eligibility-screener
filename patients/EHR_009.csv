@@ -1,0 +1,46 @@
+PATIENT DEMOGRAPHICS
+Field,Value
+"name","Patient 009"
+"mrn","202600009"
+"dob","01/01/1952"
+"age","74"
+"sex","Female"
+"gender","Female"
+"race","Other"
+"ethnicity","Non-Hispanic"
+"language","English"
+"maritalStatus","Married"
+"address","123 Clinical Way, Research City"
+"insurance","Study Sponsor"
+
+
+VITAL SIGNS
+Measurement,Value,Date
+"bp","130/80 mmHg","01/03/2026"
+"hr","72 bpm","01/03/2026"
+"temp","98.6 F","01/03/2026"
+"weight","149.9 lbs (68 kg)","01/03/2026"
+"height","5'4" (162 cm)","01/03/2026"
+"bmi","25.9 (Overweight)","01/03/2026"
+
+
+MEDICATIONS
+Medication,Dose,Route,Frequency,Indication,Prescriber
+"Rivaroxaban","20mg","Oral","Once daily","AFib","Dr. Cardio"
+
+
+ALLERGIES
+Allergen,Reaction,Severity,Verified
+"None","N/A","N/A","2026"
+
+
+PROBLEM LIST
+Condition,ICD-10 Code,Onset,Status
+"Atrial Fibrillation","I48.0","2020","Active"
+
+
+LABORATORY RESULTS
+Test,Value,Reference Range,Date,Flag
+"MMSE","25","24-30","01/03/2026","Normal"
+"CDR Global","0.5","0","01/03/2026","High"
+"Amyloid PET","Positive","Negative","01/03/2026","Positive"

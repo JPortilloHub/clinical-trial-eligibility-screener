@@ -1,0 +1,35 @@
+PATIENT DEMOGRAPHICS
+Field,Value
+"name","Patient 011"
+"mrn","202600011"
+"dob","01/01/1960"
+"age","66"
+"sex","Female"
+"gender","Female"
+"race","Other"
+"ethnicity","Non-Hispanic"
+"language","English"
+"maritalStatus","Married"
+"address","123 Clinical Way, Research City"
+"insurance","Study Sponsor"
+
+VITAL SIGNS
+Measurement,Value,Date
+"weight","136.7 lbs (62 kg)","01/03/2026"
+"bmi","23.6 (Normal)","01/03/2026"
+
+MEDICATIONS
+Medication,Dose,Route,Frequency,Indication,Prescriber
+
+ALLERGIES
+Allergen,Reaction,Severity,Verified
+"None","N/A","N/A","2026"
+
+PROBLEM LIST
+Condition,ICD-10 Code,Onset,Status
+"Cognitive Decline","R41.81","2025","Active"
+
+LABORATORY RESULTS
+Test,Value,Reference Range,Date,Flag
+"MMSE","24","24-30","01/03/2026","Normal"
+"Amyloid PET","Negative","Negative","01/03/2026","Normal"

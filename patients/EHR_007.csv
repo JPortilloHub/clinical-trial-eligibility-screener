@@ -1,0 +1,46 @@
+PATIENT DEMOGRAPHICS
+Field,Value
+"name","Patient 007"
+"mrn","202600007"
+"dob","01/01/1959"
+"age","67"
+"sex","Female"
+"gender","Female"
+"race","Other"
+"ethnicity","Non-Hispanic"
+"language","English"
+"maritalStatus","Married"
+"address","123 Clinical Way, Research City"
+"insurance","Study Sponsor"
+
+
+VITAL SIGNS
+Measurement,Value,Date
+"bp","130/80 mmHg","01/03/2026"
+"hr","82 bpm","01/03/2026"
+"temp","98.6 F","01/03/2026"
+"weight","154.3 lbs (70 kg)","01/03/2026"
+"height","5'4" (162 cm)","01/03/2026"
+"bmi","26.7 (Overweight)","01/03/2026"
+
+
+MEDICATIONS
+Medication,Dose,Route,Frequency,Indication,Prescriber
+"Sertraline","25mg","Oral","Once daily","Anxiety","Dr. Neurologist"
+
+
+ALLERGIES
+Allergen,Reaction,Severity,Verified
+"Penicillin","Anaphylaxis","Severe","1995"
+
+
+PROBLEM LIST
+Condition,ICD-10 Code,Onset,Status
+"Anxiety","F41.1","2022","Active"
+
+
+LABORATORY RESULTS
+Test,Value,Reference Range,Date,Flag
+"MMSE","27","24-30","01/03/2026","Normal"
+"CDR Global","0.5","0","01/03/2026","High"
+"Amyloid CSF","Positive","Negative","01/03/2026","Positive"

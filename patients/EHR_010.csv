@@ -1,0 +1,23 @@
+PATIENT DEMOGRAPHICS
+Field,Value
+"name","Patient 010"
+"mrn","202600010"
+"dob","01/01/1944"
+"age","82"
+"sex","Male"
+"gender","Male"
+"race","Other"
+"ethnicity","Non-Hispanic"
+"language","English"
+"maritalStatus","Married"
+"address","123 Clinical Way, Research City"
+"insurance","Study Sponsor"
+
+PROBLEM LIST
+Condition,ICD-10 Code,Onset,Status
+"Vascular Dementia","F01.50","2023","Active"
+
+LABORATORY RESULTS
+Test,Value,Reference Range,Date,Flag
+"MMSE","21","24-30","01/03/2026","Low"
+"MRI Brain","Lacunar Infarcts","No Infarcts","01/03/2026","Abnormal"
