@@ -92,4 +92,6 @@ dependencies:
       - pypdf
       - langchain_voyageai
       - langchain_chroma
+      - streamlit
+      - openpyxl
 prefix: /opt/conda

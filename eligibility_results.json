@@ -1,0 +1,1138 @@
+[
+  {
+    "patient_id": "EHR_001",
+    "trial_id": "<UNKNOWN>",
+    "overall_eligibility": "LIKELY_ELIGIBLE",
+    "confidence_score": 0.85,
+    "criteria_evaluation": [
+      {
+        "criterion": "Age 55-85 years",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "68 years"
+      },
+      {
+        "criterion": "Diagnostic Status - MCI due to AD or Probable AD",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "Mild Cognitive Impairment (G31.84)"
+      },
+      {
+        "criterion": "MMSE Score 22-30",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "24"
+      },
+      {
+        "criterion": "CDR Global Score 0.5 or 1.0",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "0.5"
+      },
+      {
+        "criterion": "Biomarker Confirmation - Positive PET amyloid",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "Positive Amyloid PET"
+      },
+      {
+        "criterion": "Study Partner Availability",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "Unknown - needs assessment"
+      },
+      {
+        "criterion": "Medication Stability - Donepezil stable \u226512 weeks",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "On Donepezil 10mg daily - duration unknown"
+      },
+      {
+        "criterion": "Non-AD Dementia Exclusion",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "No evidence of other dementia types"
+      },
+      {
+        "criterion": "Neurological Comorbidity Exclusion",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "No history mentioned"
+      },
+      {
+        "criterion": "MRI Contraindications",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "Needs assessment"
+      },
+      {
+        "criterion": "Uncontrolled Medical Conditions",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "Vitals appear stable, no concerning conditions noted"
+      },
+      {
+        "criterion": "Psychiatric Disorders Exclusion",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "Needs depression screening"
+      },
+      {
+        "criterion": "Blood Thinners Exclusion",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "No anticoagulants listed"
+      }
+    ],
+    "recommendation": "Patient appears to meet the core eligibility criteria for this Alzheimer's disease clinical trial. Key strengths include appropriate age, confirmed MCI diagnosis, qualifying cognitive scores (MMSE 24, CDR 0.5), and positive amyloid biomarker. However, several important criteria require verification before final determination.",
+    "next_steps": [
+      "Verify availability and suitability of study partner/caregiver",
+      "Confirm duration of Donepezil therapy (must be stable \u226512 weeks)",
+      "Screen for MRI contraindications (pacemaker, metal implants, claustrophobia)",
+      "Administer Geriatric Depression Scale to rule out clinical depression",
+      "Obtain baseline MRI to assess for microhemorrhages and other exclusions",
+      "Review complete medication history for any missed anticoagulants",
+      "Confirm HbA1c if diabetes history present"
+    ]
+  },
+  {
+    "patient_id": "EHR_002",
+    "trial_id": "AD Clinical Trial",
+    "overall_eligibility": "LIKELY_ELIGIBLE",
+    "confidence_score": 0.8,
+    "criteria_evaluation": [
+      {
+        "criterion": "Age: 55-85 years",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "72 years"
+      },
+      {
+        "criterion": "MMSE Score: 22-30",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "26"
+      },
+      {
+        "criterion": "CDR Global Score: 0.5 or 1.0",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "0.5"
+      },
+      {
+        "criterion": "Biomarker Confirmation: Positive amyloid",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "Positive CSF amyloid"
+      },
+      {
+        "criterion": "Study Partner: Reliable caregiver",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5,
+        "patient_value": "Not specified in records"
+      },
+      {
+        "criterion": "Medication Stability: 12 weeks stable",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5,
+        "patient_value": "On Lisinopril, not cholinesterase inhibitor"
+      },
+      {
+        "criterion": "No non-AD dementia",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "No evidence of other dementia types"
+      },
+      {
+        "criterion": "No major neurological comorbidities",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "No stroke, tumors, or epilepsy documented"
+      },
+      {
+        "criterion": "Controlled hypertension",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "BP 128/78, on Lisinopril"
+      }
+    ],
+    "recommendation": "Patient appears to meet most key eligibility criteria. The cognitive scores and biomarkers are appropriate for the trial. Need to verify study partner availability and confirm no contraindicated medications.",
+    "next_steps": [
+      "Verify availability of study partner who spends 10+ hours/week with patient",
+      "Confirm patient is not on cholinesterase inhibitors or verify stability if present",
+      "Schedule baseline MRI to rule out cerebrovascular exclusions",
+      "Complete diagnostic workup to confirm NIA-AA criteria for MCI due to AD",
+      "Screen for depression using Geriatric Depression Scale"
+    ]
+  },
+  {
+    "patient_id": "EHR_003",
+    "trial_id": "AD Clinical Trial",
+    "overall_eligibility": "LIKELY_ELIGIBLE",
+    "confidence_score": 0.75,
+    "criteria_evaluation": [
+      {
+        "criterion": "Age 55-85 years",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "79 years old"
+      },
+      {
+        "criterion": "Diagnostic Status - NIA-AA criteria for Probable AD or MCI due to AD",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "Alzheimer's Disease (G30.1), Active since 2023"
+      },
+      {
+        "criterion": "MMSE Score 22-30",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "MMSE: 23"
+      },
+      {
+        "criterion": "CDR Global Score 0.5 or 1.0",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "CDR Global: 1.0"
+      },
+      {
+        "criterion": "Positive amyloid biomarker",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "Amyloid PET: Positive"
+      },
+      {
+        "criterion": "Study partner availability",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "Married - need to verify caregiver spends 10+ hours/week"
+      },
+      {
+        "criterion": "Memantine dose stability (12 weeks)",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "On Memantine 10mg BID - need to verify dose stability duration"
+      },
+      {
+        "criterion": "No non-AD dementia",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "Primary diagnosis is AD"
+      },
+      {
+        "criterion": "No neurological comorbidities",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "Need to verify absence of stroke, brain tumors, epilepsy"
+      },
+      {
+        "criterion": "No MRI contraindications",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "Need to verify absence of pacemakers, metal implants, claustrophobia"
+      },
+      {
+        "criterion": "No uncontrolled medical conditions",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "Need to verify cardiovascular status, hepatic function, diabetes control"
+      }
+    ],
+    "recommendation": "Patient appears to meet key inclusion criteria including age, AD diagnosis, cognitive scores, and amyloid positivity. However, several exclusion criteria and requirements need verification before final eligibility determination.",
+    "next_steps": [
+      "Verify study partner availability and time commitment (10+ hours/week)",
+      "Confirm Memantine dose has been stable for at least 12 weeks",
+      "Obtain detailed medical history to rule out neurological comorbidities",
+      "Check for MRI contraindications (pacemaker, metal implants, claustrophobia)",
+      "Assess cardiovascular status and other medical conditions",
+      "Screen for psychiatric disorders and depression",
+      "Review current medications for anticoagulants",
+      "Schedule baseline MRI to check for microhemorrhages"
+    ]
+  },
+  {
+    "patient_id": "EHR_004",
+    "trial_id": "<UNKNOWN>",
+    "overall_eligibility": "LIKELY_ELIGIBLE",
+    "confidence_score": 0.75,
+    "criteria_evaluation": [
+      {
+        "criterion": "Age: 55 to 85 years",
+        "patient_value": "62 years",
+        "status": "MET",
+        "score": 1.0
+      },
+      {
+        "criterion": "Diagnostic Status: Probable AD or MCI due to AD",
+        "patient_value": "Mild Cognitive Impairment (G31.84)",
+        "status": "MET",
+        "score": 1.0
+      },
+      {
+        "criterion": "MMSE: 22-30",
+        "patient_value": "28",
+        "status": "MET",
+        "score": 1.0
+      },
+      {
+        "criterion": "CDR Global Score: 0.5 or 1.0",
+        "patient_value": "0.5",
+        "status": "MET",
+        "score": 1.0
+      },
+      {
+        "criterion": "Biomarker Confirmation: Positive amyloid",
+        "patient_value": "Positive CSF Amyloid",
+        "status": "MET",
+        "score": 1.0
+      },
+      {
+        "criterion": "Study Partner: Reliable caregiver \u226510 hrs/week",
+        "patient_value": "Not documented",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5
+      },
+      {
+        "criterion": "Medication Stability: 12 weeks stable dose",
+        "patient_value": "Not documented",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5
+      },
+      {
+        "criterion": "No Non-AD Dementia",
+        "patient_value": "Only MCI documented",
+        "status": "MET",
+        "score": 1.0
+      },
+      {
+        "criterion": "No Neurological Comorbidity",
+        "patient_value": "No history documented",
+        "status": "MET",
+        "score": 1.0
+      },
+      {
+        "criterion": "MRI Compatible",
+        "patient_value": "Not assessed",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5
+      },
+      {
+        "criterion": "Cerebrovascular Risk Assessment",
+        "patient_value": "Not assessed",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5
+      },
+      {
+        "criterion": "Controlled Medical Conditions",
+        "patient_value": "Vital signs stable, no other conditions documented",
+        "status": "MET",
+        "score": 1.0
+      },
+      {
+        "criterion": "No Psychiatric Disorders",
+        "patient_value": "Not documented",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5
+      },
+      {
+        "criterion": "No Therapeutic Anticoagulants",
+        "patient_value": "No medications documented",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5
+      }
+    ],
+    "recommendation": "Patient meets all documented inclusion criteria and shows no clear exclusion criteria violations. However, several key areas require verification before final eligibility determination.",
+    "next_steps": [
+      "Verify availability of study partner who spends \u226510 hours/week with patient",
+      "Review current medications and confirm stability for 12+ weeks if on AD medications",
+      "Screen for MRI contraindications (pacemaker, metal implants, claustrophobia)",
+      "Obtain baseline MRI to assess for microhemorrhages and cerebrovascular pathology",
+      "Administer Geriatric Depression Scale to rule out clinical depression",
+      "Review medical history for psychiatric disorders",
+      "Confirm no use of therapeutic anticoagulants",
+      "Complete comprehensive medical screening for uncontrolled conditions"
+    ]
+  },
+  {
+    "patient_id": "EHR_005",
+    "trial_id": "<UNKNOWN>",
+    "overall_eligibility": "LIKELY_ELIGIBLE",
+    "confidence_score": 0.75,
+    "criteria_evaluation": [
+      {
+        "criterion": "Age: 55 to 85 years (inclusive)",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "81 years old"
+      },
+      {
+        "criterion": "MMSE: Score between 22 and 30 (inclusive)",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "22"
+      },
+      {
+        "criterion": "CDR Global Score: 0.5 or 1.0",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "1.0"
+      },
+      {
+        "criterion": "Biomarker Confirmation: Positive PET amyloid scan or CSF markers",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "Positive amyloid PET"
+      },
+      {
+        "criterion": "Diagnostic Status: NIA-AA criteria for Probable AD or MCI due to AD",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5,
+        "patient_value": "Not explicitly documented"
+      },
+      {
+        "criterion": "Study Partner: Reliable caregiver available",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5,
+        "patient_value": "Married, but availability needs confirmation"
+      },
+      {
+        "criterion": "Medication Stability: Stable dose for 12 weeks if on AD medications",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5,
+        "patient_value": "No AD medications documented, needs verification"
+      },
+      {
+        "criterion": "Non-AD Dementia: Exclusion of other dementia types",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5,
+        "patient_value": "Not explicitly ruled out"
+      },
+      {
+        "criterion": "Neurological Comorbidity: No stroke, brain tumors, or epilepsy",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5,
+        "patient_value": "Not documented"
+      },
+      {
+        "criterion": "MRI Contraindications: No pacemakers, metal implants, claustrophobia",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5,
+        "patient_value": "Not documented"
+      }
+    ],
+    "recommendation": "Patient appears to meet key inclusion criteria with positive biomarkers and appropriate cognitive scores. However, several important criteria require verification before final eligibility determination.",
+    "next_steps": [
+      "Verify formal NIA-AA diagnostic criteria for AD or MCI due to AD",
+      "Confirm availability of study partner who meets time requirements",
+      "Obtain complete neurological history to rule out exclusionary conditions",
+      "Perform baseline MRI to assess for contraindications and cerebrovascular risk factors",
+      "Complete medication history review for AD medications and stability requirements",
+      "Screen for psychiatric disorders including depression assessment",
+      "Verify absence of blood thinners or other exclusionary medications"
+    ]
+  },
+  {
+    "patient_id": "EHR_006",
+    "trial_id": "<UNKNOWN>",
+    "overall_eligibility": "LIKELY_ELIGIBLE",
+    "confidence_score": 0.75,
+    "criteria_evaluation": [
+      {
+        "criterion": "Age 55-85 years inclusive",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "75 years old"
+      },
+      {
+        "criterion": "MMSE score 22-30 inclusive",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "25"
+      },
+      {
+        "criterion": "CDR Global Score 0.5 or 1.0",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "0.5"
+      },
+      {
+        "criterion": "Positive amyloid biomarker (PET or CSF)",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "Positive Amyloid PET"
+      },
+      {
+        "criterion": "Study partner availability",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "Marital status: Married - requires verification of study partner criteria"
+      },
+      {
+        "criterion": "Diagnostic status (Probable AD or MCI due to AD)",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "CDR 0.5 and positive amyloid suggest MCI due to AD, but formal diagnosis not documented"
+      },
+      {
+        "criterion": "Medication stability (cholinesterase inhibitors/memantine)",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "No AD medications documented"
+      },
+      {
+        "criterion": "No non-AD dementia",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "No alternative dementia diagnoses documented"
+      },
+      {
+        "criterion": "No neurological comorbidities",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "No stroke, brain tumors, or epilepsy documented"
+      },
+      {
+        "criterion": "MRI contraindications",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "No MRI contraindications documented, requires verification"
+      },
+      {
+        "criterion": "Cerebrovascular risk assessment",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "No baseline MRI data available"
+      },
+      {
+        "criterion": "Controlled medical conditions",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "Only hyperlipidemia documented, appears stable on statin"
+      },
+      {
+        "criterion": "No psychiatric disorders",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "No psychiatric history documented, depression screening needed"
+      },
+      {
+        "criterion": "No therapeutic anticoagulants",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "No anticoagulants in medication list"
+      }
+    ],
+    "recommendation": "Patient shows strong potential for eligibility with key biomarker and cognitive criteria met. Several important criteria require verification before final determination.",
+    "next_steps": [
+      "Verify study partner availability and confirm spouse can meet 10 hours/week requirement",
+      "Obtain formal diagnostic assessment for Probable AD or MCI due to AD per NIA-AA criteria",
+      "Screen for MRI contraindications (pacemaker, metal implants, claustrophobia)",
+      "Obtain baseline MRI to assess for microhemorrhages and cortical infarcts",
+      "Administer Geriatric Depression Scale to rule out clinical depression",
+      "Complete comprehensive medical history review for any undocumented conditions"
+    ]
+  },
+  {
+    "patient_id": "EHR_007",
+    "trial_id": "<UNKNOWN>",
+    "overall_eligibility": "LIKELY_ELIGIBLE",
+    "confidence_score": 0.8,
+    "criteria_evaluation": [
+      {
+        "criterion": "Age: 55 to 85 years (inclusive)",
+        "status": "MET",
+        "patient_value": "67 years old",
+        "score": 1.0
+      },
+      {
+        "criterion": "MMSE Score: between 22 and 30 (inclusive)",
+        "status": "MET",
+        "patient_value": "27",
+        "score": 1.0
+      },
+      {
+        "criterion": "CDR Global Score: 0.5 or 1.0",
+        "status": "MET",
+        "patient_value": "0.5",
+        "score": 1.0
+      },
+      {
+        "criterion": "Biomarker Confirmation: Positive CSF amyloid",
+        "status": "MET",
+        "patient_value": "CSF amyloid positive",
+        "score": 1.0
+      },
+      {
+        "criterion": "Study Partner: Reliable caregiver available",
+        "status": "NEEDS_VERIFICATION",
+        "patient_value": "Married status suggests potential partner",
+        "score": 0.5
+      },
+      {
+        "criterion": "Cholinesterase inhibitor stability (if applicable)",
+        "status": "MET",
+        "patient_value": "Not on cholinesterase inhibitors",
+        "score": 1.0
+      },
+      {
+        "criterion": "No non-AD dementia diagnosis",
+        "status": "MET",
+        "patient_value": "Only anxiety in problem list",
+        "score": 1.0
+      },
+      {
+        "criterion": "No neurological comorbidities",
+        "status": "NEEDS_VERIFICATION",
+        "patient_value": "No history documented but requires confirmation",
+        "score": 0.8
+      },
+      {
+        "criterion": "No MRI contraindications",
+        "status": "NEEDS_VERIFICATION",
+        "patient_value": "Not documented",
+        "score": 0.8
+      },
+      {
+        "criterion": "No severe penicillin allergy contraindication",
+        "status": "MET",
+        "patient_value": "Penicillin allergy documented but not relevant to trial drug",
+        "score": 1.0
+      },
+      {
+        "criterion": "No uncontrolled medical conditions",
+        "status": "NEEDS_VERIFICATION",
+        "patient_value": "BP 130/80, BMI 26.7 - requires assessment",
+        "score": 0.8
+      },
+      {
+        "criterion": "No severe psychiatric disorders",
+        "status": "MET",
+        "patient_value": "Only anxiety on sertraline",
+        "score": 0.9
+      },
+      {
+        "criterion": "No therapeutic anticoagulants",
+        "status": "MET",
+        "patient_value": "Not on anticoagulants",
+        "score": 1.0
+      }
+    ],
+    "recommendation": "Patient meets most key eligibility criteria including age, cognitive scores, and biomarker confirmation. Main areas requiring verification include study partner availability and detailed medical history screening.",
+    "next_steps": [
+      "Verify availability of study partner who spends \u226510 hours/week with patient",
+      "Complete neurological history screening to rule out stroke, brain tumors, or epilepsy",
+      "Obtain baseline MRI to check for contraindications and cerebrovascular risk factors",
+      "Screen for depression using Geriatric Depression Scale",
+      "Review complete medical history for uncontrolled conditions",
+      "Confirm no current use of therapeutic anticoagulants"
+    ]
+  },
+  {
+    "patient_id": "EHR_008",
+    "trial_id": "<UNKNOWN>",
+    "overall_eligibility": "LIKELY_ELIGIBLE",
+    "confidence_score": 0.75,
+    "criteria_evaluation": [
+      {
+        "criterion": "Age 55-85 years",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "70 years"
+      },
+      {
+        "criterion": "MMSE Score 22-30",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "24"
+      },
+      {
+        "criterion": "CDR Global Score 0.5 or 1.0",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "1.0"
+      },
+      {
+        "criterion": "Positive amyloid biomarker",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "Positive Amyloid PET"
+      },
+      {
+        "criterion": "Diagnostic status - Probable AD or MCI due to AD",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "Alzheimer's Disease (G30.1)"
+      },
+      {
+        "criterion": "Study partner availability",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "Not documented"
+      },
+      {
+        "criterion": "Medication stability",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "No current medications listed"
+      },
+      {
+        "criterion": "No non-AD dementia",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "Primary diagnosis is Alzheimer's Disease"
+      },
+      {
+        "criterion": "No neurological comorbidities",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "No stroke, brain tumors, or epilepsy documented"
+      },
+      {
+        "criterion": "No uncontrolled medical conditions",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "Vital signs stable, but no lab work for diabetes/cardiac function"
+      }
+    ],
+    "recommendation": "Patient appears to meet most key eligibility criteria for the clinical trial. The patient has confirmed Alzheimer's disease with appropriate cognitive scores (MMSE 24, CDR 1.0) and positive amyloid biomarker. Age is within range at 70 years. However, several important criteria need verification before final determination.",
+    "next_steps": [
+      "Verify availability and suitability of study partner/caregiver",
+      "Review current medications and confirm stability requirements",
+      "Obtain MRI to rule out cerebrovascular contraindications",
+      "Complete screening for uncontrolled medical conditions (HbA1c, cardiovascular assessment)",
+      "Screen for psychiatric disorders and depression",
+      "Confirm no use of therapeutic anticoagulants",
+      "Verify no MRI contraindications (pacemaker, metal implants, claustrophobia)"
+    ]
+  },
+  {
+    "patient_id": "EHR_009",
+    "trial_id": "<UNKNOWN>",
+    "overall_eligibility": "NOT_ELIGIBLE",
+    "confidence_score": 0.95,
+    "criteria_evaluation": [
+      {
+        "criterion": "Age: 55 to 85 years (inclusive) at the time of screening",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "74 years"
+      },
+      {
+        "criterion": "MMSE: Score between 22 and 30 (inclusive)",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "25"
+      },
+      {
+        "criterion": "CDR Global Score: 0.5 or 1.0",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "0.5"
+      },
+      {
+        "criterion": "Biomarker Confirmation: Positive PET amyloid scan or CSF consistent with amyloid pathology",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "Positive Amyloid PET"
+      },
+      {
+        "criterion": "Study Partner: Availability of reliable caregiver/partner who spends at least 10 hours/week with patient",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "Married status noted but need to verify partner availability"
+      },
+      {
+        "criterion": "Blood Thinners: Concurrent use of therapeutic anticoagulants (exclusion)",
+        "status": "NOT_MET",
+        "score": 0.0,
+        "patient_value": "Taking Rivaroxaban 20mg daily for AFib"
+      },
+      {
+        "criterion": "Stability of Medication: If on cholinesterase inhibitors or Memantine, dose stable for 12+ weeks",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "Not on cholinesterase inhibitors or Memantine"
+      }
+    ],
+    "recommendation": "Patient is NOT ELIGIBLE for this clinical trial due to concurrent use of Rivaroxaban (therapeutic anticoagulant), which is an exclusion criterion. While the patient meets most inclusion criteria including age, cognitive scores, and positive amyloid biomarker, the anticoagulation therapy for atrial fibrillation presents a safety concern for the study protocol.",
+    "next_steps": [
+      "Discuss with patient's cardiologist about possibility of switching to low-dose aspirin (\u2264100mg) if clinically appropriate",
+      "Reassess eligibility if anticoagulation status changes",
+      "Verify availability of study partner who meets time commitment requirements",
+      "Consider patient for future trials that may allow therapeutic anticoagulation"
+    ]
+  },
+  {
+    "patient_id": "EHR_010",
+    "trial_id": "<UNKNOWN>",
+    "overall_eligibility": "NOT_ELIGIBLE",
+    "confidence_score": 0.95,
+    "criteria_evaluation": [
+      {
+        "criterion": "Age: 55 to 85 years (inclusive)",
+        "patient_value": "82 years",
+        "status": "MET",
+        "score": 1.0
+      },
+      {
+        "criterion": "Diagnostic Status: NIA-AA clinical criteria for Probable AD or MCI due to AD",
+        "patient_value": "Vascular Dementia (F01.50)",
+        "status": "NOT_MET",
+        "score": 0.0
+      },
+      {
+        "criterion": "MMSE: Score between 22 and 30 (inclusive)",
+        "patient_value": "21",
+        "status": "NOT_MET",
+        "score": 0.0
+      },
+      {
+        "criterion": "CDR Global Score: 0.5 or 1.0",
+        "patient_value": "Not reported",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0
+      },
+      {
+        "criterion": "Biomarker Confirmation: Positive PET amyloid scan or CSF markers",
+        "patient_value": "Not reported",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0
+      },
+      {
+        "criterion": "Study Partner: Reliable caregiver available",
+        "patient_value": "Not reported (married status noted)",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0
+      },
+      {
+        "criterion": "Exclusion - Non-AD Dementia: Vascular Dementia diagnosis",
+        "patient_value": "Vascular Dementia (F01.50) - Active",
+        "status": "NOT_MET",
+        "score": 0.0
+      },
+      {
+        "criterion": "Exclusion - Neurological Comorbidity: History of stroke",
+        "patient_value": "MRI shows Lacunar Infarcts",
+        "status": "NOT_MET",
+        "score": 0.0
+      }
+    ],
+    "recommendation": "Patient is not eligible for this clinical trial due to multiple exclusion criteria being met",
+    "next_steps": [
+      "Confirm vascular dementia diagnosis with neurologist",
+      "Consider alternative trials for vascular dementia patients",
+      "Evaluate patient for appropriate vascular dementia management strategies"
+    ]
+  },
+  {
+    "patient_id": "EHR_011",
+    "trial_id": "<UNKNOWN>",
+    "overall_eligibility": "NOT_ELIGIBLE",
+    "confidence_score": 0.9,
+    "criteria_evaluation": [
+      {
+        "criterion": "Age 55-85 years",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "66 years"
+      },
+      {
+        "criterion": "Diagnostic Status - Probable AD or MCI due to AD",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "Cognitive Decline (R41.81)"
+      },
+      {
+        "criterion": "MMSE Score 22-30",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "24"
+      },
+      {
+        "criterion": "CDR Global Score 0.5 or 1.0",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5,
+        "patient_value": "Not provided"
+      },
+      {
+        "criterion": "Biomarker Confirmation - Positive PET amyloid or CSF",
+        "status": "NOT_MET",
+        "score": 0.0,
+        "patient_value": "Amyloid PET: Negative"
+      },
+      {
+        "criterion": "Study Partner Availability",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5,
+        "patient_value": "Married, but availability unclear"
+      },
+      {
+        "criterion": "Medication Stability",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5,
+        "patient_value": "No medications listed"
+      },
+      {
+        "criterion": "Non-AD Dementia (Exclusion)",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "No evidence of vascular, Lewy body, or FTD"
+      },
+      {
+        "criterion": "Neurological Comorbidity (Exclusion)",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "No stroke, brain tumors, or epilepsy documented"
+      },
+      {
+        "criterion": "Other Medical/Psychiatric Exclusions",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "No documented exclusionary conditions"
+      }
+    ],
+    "recommendation": "Patient is not eligible for the clinical trial due to negative amyloid PET scan, which is required for biomarker confirmation. The trial specifically requires positive PET amyloid scan or CSF evidence of amyloid pathology. All other major criteria appear to be met or need verification.",
+    "next_steps": [
+      "Confirm CDR Global Score assessment",
+      "Verify study partner availability and time commitment",
+      "Review current medications and stability requirements",
+      "Consider alternative trials that do not require amyloid positivity",
+      "Discuss results with patient and family regarding trial ineligibility"
+    ]
+  },
+  {
+    "patient_id": "EHR_012",
+    "trial_id": "<UNKNOWN>",
+    "overall_eligibility": "NOT_ELIGIBLE",
+    "confidence_score": 0.95,
+    "criteria_evaluation": [
+      {
+        "criterion": "Age 55-85 years",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "77 years old"
+      },
+      {
+        "criterion": "MMSE score 22-30",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "MMSE: 26"
+      },
+      {
+        "criterion": "MRI contraindications - pacemaker exclusion",
+        "status": "NOT_MET",
+        "score": 0.0,
+        "patient_value": "Has cardiac pacemaker (Z95.0)"
+      },
+      {
+        "criterion": "Diagnostic status - Probable AD or MCI due to AD",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "No documented AD or MCI diagnosis in problem list"
+      },
+      {
+        "criterion": "CDR Global Score 0.5 or 1.0",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "CDR score not documented"
+      },
+      {
+        "criterion": "Biomarker confirmation",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "No PET amyloid or CSF results documented"
+      },
+      {
+        "criterion": "Study partner availability",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "Married status suggests potential partner but needs verification"
+      }
+    ],
+    "recommendation": "Patient is NOT ELIGIBLE due to presence of cardiac pacemaker, which is an absolute MRI contraindication per exclusion criteria #3. Even if other missing criteria were met, the pacemaker would disqualify the patient from participation.",
+    "next_steps": [
+      "Inform patient and referring physician of ineligibility due to pacemaker contraindication",
+      "Consider alternative clinical trials that do not require MRI monitoring",
+      "Document exclusion reason in trial screening log"
+    ]
+  },
+  {
+    "patient_id": "EHR_013",
+    "trial_id": "<UNKNOWN>",
+    "overall_eligibility": "NOT_ELIGIBLE",
+    "confidence_score": 0.85,
+    "criteria_evaluation": [
+      {
+        "criterion": "Age 55-85 years",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "69 years old"
+      },
+      {
+        "criterion": "MMSE score 22-30",
+        "status": "NOT_MET",
+        "score": 0.0,
+        "patient_value": "23 (below minimum of 22)"
+      },
+      {
+        "criterion": "Diagnostic status - Probable AD or MCI due to AD",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5,
+        "patient_value": "Major Depression diagnosed, no AD/MCI diagnosis documented"
+      },
+      {
+        "criterion": "CDR Global Score 0.5 or 1.0",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "Not provided"
+      },
+      {
+        "criterion": "Biomarker confirmation (PET amyloid or CSF)",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "Not provided"
+      },
+      {
+        "criterion": "Study partner availability",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.0,
+        "patient_value": "Married status suggests potential partner, but not verified"
+      },
+      {
+        "criterion": "Current clinical depression exclusion (GDS >8)",
+        "status": "NOT_MET",
+        "score": 0.0,
+        "patient_value": "GDS Score 11 (exceeds maximum of 8)"
+      }
+    ],
+    "recommendation": "Patient is not eligible for trial enrollment due to two critical exclusion criteria: MMSE score below minimum threshold and current clinical depression with GDS score >8. Additionally, multiple inclusion criteria require verification.",
+    "next_steps": [
+      "Address current depression with appropriate psychiatric care",
+      "Reassess cognitive status after depression treatment",
+      "Obtain comprehensive neuropsychological evaluation including CDR assessment",
+      "Consider amyloid biomarker testing if cognitive symptoms persist after depression treatment",
+      "Re-evaluate eligibility after depression has been adequately treated and stabilized"
+    ]
+  },
+  {
+    "patient_id": "EHR_014",
+    "trial_id": "<UNKNOWN>",
+    "overall_eligibility": "NOT_ELIGIBLE",
+    "confidence_score": 0.95,
+    "criteria_evaluation": [
+      {
+        "criterion": "Age: 55 to 85 years (inclusive)",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "73 years"
+      },
+      {
+        "criterion": "MMSE: Score between 22 and 30 (inclusive)",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "25"
+      },
+      {
+        "criterion": "CDR Global Score: 0.5 or 1.0",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "0.5"
+      },
+      {
+        "criterion": "Positive PET amyloid scan or CSF A\u03b2\u2084\u2082/A\u03b2\u2084\u2080 ratio consistent with amyloid pathology",
+        "status": "MET",
+        "score": 1.0,
+        "patient_value": "Amyloid PET Positive"
+      },
+      {
+        "criterion": "Study Partner: Reliable caregiver/partner spending \u226510 hours/week",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5,
+        "patient_value": "Marital status: Married (needs confirmation of study partner availability)"
+      },
+      {
+        "criterion": "Stability of medication (if applicable)",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5,
+        "patient_value": "Not specified in available data"
+      },
+      {
+        "criterion": "Poorly controlled Type 2 Diabetes (HbA1c > 8.5%) - EXCLUSION",
+        "status": "NOT_MET",
+        "score": 0.0,
+        "patient_value": "HbA1c: 9.2% (exceeds 8.5% threshold)"
+      }
+    ],
+    "recommendation": "Patient is NOT ELIGIBLE for the clinical trial due to poorly controlled Type 2 Diabetes with HbA1c of 9.2%, which exceeds the exclusion threshold of 8.5%. While the patient meets several inclusion criteria (age, cognitive scores, amyloid biomarker), the uncontrolled diabetes represents a significant exclusion criterion that must be addressed.",
+    "next_steps": [
+      "Refer patient to endocrinology for diabetes management optimization",
+      "Target HbA1c reduction to \u22648.5% through medication adjustment and lifestyle modifications",
+      "Consider re-screening for trial eligibility once diabetes is better controlled (typically requires 3-6 months of stable management)",
+      "Verify availability of study partner who can commit to required time and visit attendance",
+      "Obtain complete medication history to assess cholinesterase inhibitor/Memantine stability requirements"
+    ]
+  },
+  {
+    "patient_id": "EHR_015",
+    "trial_id": "<UNKNOWN>",
+    "overall_eligibility": "NOT_ELIGIBLE",
+    "confidence_score": 0.9,
+    "criteria_evaluation": [
+      {
+        "criterion": "Age: 55 to 85 years (inclusive)",
+        "status": "NOT_MET",
+        "score": 0,
+        "patient_value": "84 years old"
+      },
+      {
+        "criterion": "Diagnostic Status: Probable Alzheimer's Disease or MCI due to AD",
+        "status": "MET",
+        "score": 1,
+        "patient_value": "Alzheimer's Disease (G30.1)"
+      },
+      {
+        "criterion": "MMSE Score: 22-30 (inclusive)",
+        "status": "MET",
+        "score": 1,
+        "patient_value": "MMSE = 27"
+      },
+      {
+        "criterion": "CDR Global Score: 0.5 or 1.0",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5,
+        "patient_value": "Not documented"
+      },
+      {
+        "criterion": "Biomarker Confirmation: Positive PET amyloid or CSF",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5,
+        "patient_value": "Not documented"
+      },
+      {
+        "criterion": "Study Partner: Available caregiver 10+ hours/week",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5,
+        "patient_value": "Married - partner availability unknown"
+      },
+      {
+        "criterion": "Medication Stability: 12+ weeks stable dose",
+        "status": "NEEDS_VERIFICATION",
+        "score": 0.5,
+        "patient_value": "Current medications not documented"
+      },
+      {
+        "criterion": "MRI Microhemorrhages: \u22644 allowed",
+        "status": "NOT_MET",
+        "score": 0,
+        "patient_value": "7 microhemorrhages (>4 threshold)"
+      }
+    ],
+    "recommendation": "Patient is not eligible for the clinical trial due to two major exclusion criteria: age exceeds the upper limit (84 years old, limit is 85 inclusive) and presence of excessive microhemorrhages (7 detected, >4 threshold). While the patient meets some inclusion criteria including appropriate MMSE score and AD diagnosis, these exclusions are disqualifying.",
+    "next_steps": [
+      "Inform patient and family of ineligibility due to age and microhemorrhage exclusions",
+      "Provide information about alternative clinical trials with broader age criteria",
+      "Consider standard of care treatment options",
+      "Schedule follow-up for ongoing AD management"
+    ]
+  }
+]
