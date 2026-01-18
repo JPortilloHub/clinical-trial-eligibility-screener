@@ -1,0 +1,35 @@
+PATIENT DEMOGRAPHICS
+Field,Value
+"name","Patient 015"
+"mrn","202600015"
+"dob","01/01/1942"
+"age","84"
+"sex","Female"
+"gender","Female"
+"race","Other"
+"ethnicity","Non-Hispanic"
+"language","English"
+"maritalStatus","Married"
+"address","123 Clinical Way, Research City"
+"insurance","Study Sponsor"
+
+VITAL SIGNS
+Measurement,Value,Date
+"weight","127.9 lbs (58 kg)","01/03/2026"
+"bmi","22.1 (Normal)","01/03/2026"
+
+MEDICATIONS
+Medication,Dose,Route,Frequency,Indication,Prescriber
+
+ALLERGIES
+Allergen,Reaction,Severity,Verified
+"None","N/A","N/A","2026"
+
+PROBLEM LIST
+Condition,ICD-10 Code,Onset,Status
+"Alzheimer's Disease","G30.1","2025","Active"
+
+LABORATORY RESULTS
+Test,Value,Reference Range,Date,Flag
+"MMSE","27","24-30","01/03/2026","Normal"
+"MRI Microhemorrhages","7","<=4","01/03/2026","High"

@@ -1,0 +1,46 @@
+PATIENT DEMOGRAPHICS
+Field,Value
+"name","Patient 005"
+"mrn","202600005"
+"dob","01/01/1945"
+"age","81"
+"sex","Female"
+"gender","Female"
+"race","Other"
+"ethnicity","Non-Hispanic"
+"language","English"
+"maritalStatus","Married"
+"address","123 Clinical Way, Research City"
+"insurance","Study Sponsor"
+
+
+VITAL SIGNS
+Measurement,Value,Date
+"bp","122/75 mmHg","01/03/2026"
+"hr","70 bpm","01/03/2026"
+"temp","98.6 F","01/03/2026"
+"weight","121.3 lbs (55 kg)","01/03/2026"
+"height","5'4" (162 cm)","01/03/2026"
+"bmi","21.0 (Normal)","01/03/2026"
+
+
+MEDICATIONS
+Medication,Dose,Route,Frequency,Indication,Prescriber
+"Levothyroxine","75mcg","Oral","Once daily","Hypothyroidism","Dr. Neurologist"
+
+
+ALLERGIES
+Allergen,Reaction,Severity,Verified
+"Iodine","Rash","Moderate","2018"
+
+
+PROBLEM LIST
+Condition,ICD-10 Code,Onset,Status
+"Hypothyroidism","E03.9","2012","Active"
+
+
+LABORATORY RESULTS
+Test,Value,Reference Range,Date,Flag
+"MMSE","22","24-30","01/03/2026","Low"
+"CDR Global","1.0","0","01/03/2026","High"
+"Amyloid PET","Positive","Negative","01/03/2026","Positive"
