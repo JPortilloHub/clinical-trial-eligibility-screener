@@ -520,11 +520,21 @@ if not results:
         """)
 
 else:
-    # Initialize session state for filters
+    # Initialize session state for filters (shared across all tabs)
     if "eligibility_filter" not in st.session_state:
         st.session_state.eligibility_filter = ["ELIGIBLE", "NOT_ELIGIBLE", "LIKELY_ELIGIBLE", "UNCLEAR"]
     if "confidence_filter" not in st.session_state:
         st.session_state.confidence_filter = 0.0
+    if "show_eligible" not in st.session_state:
+        st.session_state.show_eligible = True
+    if "show_not_eligible" not in st.session_state:
+        st.session_state.show_not_eligible = True
+    if "show_likely" not in st.session_state:
+        st.session_state.show_likely = True
+    if "show_unclear" not in st.session_state:
+        st.session_state.show_unclear = True
+    if "confidence_min" not in st.session_state:
+        st.session_state.confidence_min = 0.0
 
     # Tabs immediately below header
     tab1, tab2, tab3 = st.tabs(["📊  OVERVIEW", "👤  PATIENT DETAILS", "📋  FULL REPORT"])
@@ -538,35 +548,35 @@ else:
                 st.markdown('<p class="filter-group-label">Eligibility Status</p>', unsafe_allow_html=True)
                 elig_col1, elig_col2 = st.columns(2)
                 with elig_col1:
-                    show_eligible = st.checkbox("Eligible", value="ELIGIBLE" in st.session_state.eligibility_filter, key="ov_elig")
-                    show_likely = st.checkbox("Likely Eligible", value="LIKELY_ELIGIBLE" in st.session_state.eligibility_filter, key="ov_likely")
+                    st.session_state.show_eligible = st.checkbox("Eligible", value=st.session_state.show_eligible, key="ov_elig")
+                    st.session_state.show_likely = st.checkbox("Likely Eligible", value=st.session_state.show_likely, key="ov_likely")
                 with elig_col2:
-                    show_not_eligible = st.checkbox("Not Eligible", value="NOT_ELIGIBLE" in st.session_state.eligibility_filter, key="ov_not_elig")
-                    show_unclear = st.checkbox("Unclear", value="UNCLEAR" in st.session_state.eligibility_filter, key="ov_unclear")
+                    st.session_state.show_not_eligible = st.checkbox("Not Eligible", value=st.session_state.show_not_eligible, key="ov_not_elig")
+                    st.session_state.show_unclear = st.checkbox("Unclear", value=st.session_state.show_unclear, key="ov_unclear")
 
             with filter_cols[1]:
                 st.markdown('<div style="border-left: 2px solid #e2e8f0; height: 100px; margin-top: 1rem;"></div>', unsafe_allow_html=True)
 
             with filter_cols[2]:
                 st.markdown('<p class="filter-group-label">Confidence Threshold</p>', unsafe_allow_html=True)
-                confidence_min = st.slider("Minimum confidence", 0.0, 1.0, st.session_state.confidence_filter, 0.05, key="ov_conf", label_visibility="collapsed")
+                st.session_state.confidence_min = st.slider("Minimum confidence", 0.0, 1.0, st.session_state.confidence_min, 0.05, key="ov_conf", label_visibility="collapsed")
 
-        # Build filter list for Overview
+        # Build filter list for Overview using shared session state
         ov_selected_statuses = []
-        if show_eligible:
+        if st.session_state.show_eligible:
             ov_selected_statuses.append("ELIGIBLE")
-        if show_not_eligible:
+        if st.session_state.show_not_eligible:
             ov_selected_statuses.append("NOT_ELIGIBLE")
-        if show_likely:
+        if st.session_state.show_likely:
             ov_selected_statuses.append("LIKELY_ELIGIBLE")
-        if show_unclear:
+        if st.session_state.show_unclear:
             ov_selected_statuses.append("UNCLEAR")
 
         # Apply filters
         filtered_results = [
             r for r in results
             if r.get("overall_eligibility") in ov_selected_statuses
-            and r.get("confidence_score", 0) >= confidence_min
+            and r.get("confidence_score", 0) >= st.session_state.confidence_min
         ]
 
         if not filtered_results:
@@ -766,40 +776,40 @@ else:
                 st.markdown('<p class="filter-group-label">Eligibility Status</p>', unsafe_allow_html=True)
                 pd_elig_col1, pd_elig_col2 = st.columns(2)
                 with pd_elig_col1:
-                    pd_show_eligible = st.checkbox("Eligible", value=True, key="pd_elig")
-                    pd_show_likely = st.checkbox("Likely Eligible", value=True, key="pd_likely")
+                    st.session_state.show_eligible = st.checkbox("Eligible", value=st.session_state.show_eligible, key="pd_elig")
+                    st.session_state.show_likely = st.checkbox("Likely Eligible", value=st.session_state.show_likely, key="pd_likely")
                 with pd_elig_col2:
-                    pd_show_not_eligible = st.checkbox("Not Eligible", value=True, key="pd_not_elig")
-                    pd_show_unclear = st.checkbox("Unclear", value=True, key="pd_unclear")
+                    st.session_state.show_not_eligible = st.checkbox("Not Eligible", value=st.session_state.show_not_eligible, key="pd_not_elig")
+                    st.session_state.show_unclear = st.checkbox("Unclear", value=st.session_state.show_unclear, key="pd_unclear")
 
             with filter_cols[1]:
                 st.markdown('<div style="border-left: 2px solid #e2e8f0; height: 100px; margin-top: 1rem;"></div>', unsafe_allow_html=True)
 
             with filter_cols[2]:
                 st.markdown('<p class="filter-group-label">Confidence Threshold</p>', unsafe_allow_html=True)
-                pd_confidence_min = st.slider("Minimum confidence", 0.0, 1.0, 0.0, 0.05, key="pd_conf", label_visibility="collapsed")
+                st.session_state.confidence_min = st.slider("Minimum confidence", 0.0, 1.0, st.session_state.confidence_min, 0.05, key="pd_conf", label_visibility="collapsed")
 
             with filter_cols[3]:
                 st.markdown('<div style="border-left: 2px solid #e2e8f0; height: 100px; margin-top: 1rem;"></div>', unsafe_allow_html=True)
 
             with filter_cols[4]:
                 st.markdown('<p class="filter-group-label">Select Patient</p>', unsafe_allow_html=True)
-                # Build filter list for Patient Details
+                # Build filter list for Patient Details using shared session state
                 pd_selected_statuses = []
-                if pd_show_eligible:
+                if st.session_state.show_eligible:
                     pd_selected_statuses.append("ELIGIBLE")
-                if pd_show_not_eligible:
+                if st.session_state.show_not_eligible:
                     pd_selected_statuses.append("NOT_ELIGIBLE")
-                if pd_show_likely:
+                if st.session_state.show_likely:
                     pd_selected_statuses.append("LIKELY_ELIGIBLE")
-                if pd_show_unclear:
+                if st.session_state.show_unclear:
                     pd_selected_statuses.append("UNCLEAR")
 
                 # Apply filters
                 pd_filtered_results = [
                     r for r in results
                     if r.get("overall_eligibility") in pd_selected_statuses
-                    and r.get("confidence_score", 0) >= pd_confidence_min
+                    and r.get("confidence_score", 0) >= st.session_state.confidence_min
                 ]
 
                 patient_ids = [r.get("patient_id", f"Patient {i}") for i, r in enumerate(pd_filtered_results)]
@@ -876,19 +886,23 @@ else:
                     }
                     criteria_df = criteria_df.rename(columns={k: v for k, v in column_map.items() if k in criteria_df.columns})
 
-                    # Replace NEEDS_VERIFICATION with Review
+                    # Replace status values with display-friendly labels
                     if "Status" in criteria_df.columns:
-                        criteria_df["Status"] = criteria_df["Status"].replace("NEEDS_VERIFICATION", "Review")
+                        criteria_df["Status"] = criteria_df["Status"].replace({
+                            "MET": "Met",
+                            "NOT_MET": "Not Met",
+                            "NEEDS_VERIFICATION": "Review"
+                        })
 
                     if "Score" in criteria_df.columns:
                         criteria_df["Score"] = criteria_df["Score"].apply(lambda x: f"{x:.0%}" if pd.notna(x) else "N/A")
 
                     def highlight_status(row):
                         status_val = row.get("Status", "")
-                        if status_val == "MET":
+                        if status_val == "Met":
                             # Light green for Met
                             return ['background-color: #dcfce7; color: #166534'] * len(row)
-                        elif status_val == "NOT_MET":
+                        elif status_val == "Not Met":
                             # Light red for Not Met
                             return ['background-color: #fee2e2; color: #991b1b'] * len(row)
                         elif status_val == "Review":
@@ -926,35 +940,35 @@ else:
                 st.markdown('<p class="filter-group-label">Eligibility Status</p>', unsafe_allow_html=True)
                 fr_elig_col1, fr_elig_col2 = st.columns(2)
                 with fr_elig_col1:
-                    fr_show_eligible = st.checkbox("Eligible", value=True, key="fr_elig")
-                    fr_show_likely = st.checkbox("Likely Eligible", value=True, key="fr_likely")
+                    st.session_state.show_eligible = st.checkbox("Eligible", value=st.session_state.show_eligible, key="fr_elig")
+                    st.session_state.show_likely = st.checkbox("Likely Eligible", value=st.session_state.show_likely, key="fr_likely")
                 with fr_elig_col2:
-                    fr_show_not_eligible = st.checkbox("Not Eligible", value=True, key="fr_not_elig")
-                    fr_show_unclear = st.checkbox("Unclear", value=True, key="fr_unclear")
+                    st.session_state.show_not_eligible = st.checkbox("Not Eligible", value=st.session_state.show_not_eligible, key="fr_not_elig")
+                    st.session_state.show_unclear = st.checkbox("Unclear", value=st.session_state.show_unclear, key="fr_unclear")
 
             with filter_cols[1]:
                 st.markdown('<div style="border-left: 2px solid #e2e8f0; height: 100px; margin-top: 1rem;"></div>', unsafe_allow_html=True)
 
             with filter_cols[2]:
                 st.markdown('<p class="filter-group-label">Confidence Threshold</p>', unsafe_allow_html=True)
-                fr_confidence_min = st.slider("Minimum confidence", 0.0, 1.0, 0.0, 0.05, key="fr_conf", label_visibility="collapsed")
+                st.session_state.confidence_min = st.slider("Minimum confidence", 0.0, 1.0, st.session_state.confidence_min, 0.05, key="fr_conf", label_visibility="collapsed")
 
-        # Build filter list for Full Report
+        # Build filter list for Full Report using shared session state
         fr_selected_statuses = []
-        if fr_show_eligible:
+        if st.session_state.show_eligible:
             fr_selected_statuses.append("ELIGIBLE")
-        if fr_show_not_eligible:
+        if st.session_state.show_not_eligible:
             fr_selected_statuses.append("NOT_ELIGIBLE")
-        if fr_show_likely:
+        if st.session_state.show_likely:
             fr_selected_statuses.append("LIKELY_ELIGIBLE")
-        if fr_show_unclear:
+        if st.session_state.show_unclear:
             fr_selected_statuses.append("UNCLEAR")
 
         # Apply filters
         fr_filtered_results = [
             r for r in results
             if r.get("overall_eligibility") in fr_selected_statuses
-            and r.get("confidence_score", 0) >= fr_confidence_min
+            and r.get("confidence_score", 0) >= st.session_state.confidence_min
         ]
 
         if not fr_filtered_results:
@@ -1022,13 +1036,21 @@ else:
 
             summary_df = pd.DataFrame(summary_data)
 
+            # Replace status values with display-friendly labels
+            summary_df["Status"] = summary_df["Status"].replace({
+                "ELIGIBLE": "Eligible",
+                "NOT_ELIGIBLE": "Not Eligible",
+                "LIKELY_ELIGIBLE": "Likely Eligible",
+                "UNCLEAR": "Unclear"
+            })
+
             def highlight_status_row(row):
                 status_val = row.get("Status", "")
-                if status_val == "ELIGIBLE":
+                if status_val == "Eligible":
                     return ['background-color: #dcfce7'] * len(row)  # Light green
-                elif status_val == "NOT_ELIGIBLE":
+                elif status_val == "Not Eligible":
                     return ['background-color: #fee2e2'] * len(row)  # Light red
-                elif status_val == "LIKELY_ELIGIBLE":
+                elif status_val == "Likely Eligible":
                     return ['background-color: #fef9c3'] * len(row)  # Light yellow
                 return ['background-color: #f1f5f9'] * len(row)
 
